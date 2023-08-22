@@ -9,8 +9,8 @@
   --lightslate: #8e8f99;
   --green: #31d0aa;
   --dairy: #fcfcfc;
-    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*======= Base styles ============ */
 body {
   font-family: 'Roboto', sans-serif;
@@ -838,9 +838,6 @@ img {
   color: var(--lightslate);
 }
 
-/*.checkbox:checked + .modal-form-desc {
-  color: var(--ocean);*/
-}
 .agreement-checkbox {
   color: transparent;
   display: inline-flex;

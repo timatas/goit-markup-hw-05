@@ -613,19 +613,21 @@ img {
 .footer-button {
   margin-left: auto;
 }
+.footer-form-label {
+}
 .footer-form {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 24px;
 }
 .footer-form-input {
   width: 264px;
   height: 40px;
-  padding: 8px 212px 8px 16px;
+  padding-left: 16px;
 
   font-size: 12px;
   letter-spacing: 0.04em;
-  line-height: 2em;
+  line-height: 1.5;
   color: var(--white);
 
   outline: transparent;
@@ -667,6 +669,7 @@ img {
 }
 .footer-btn-icon {
   fill: var(--white);
+  margin-left: 16px;
 }
 
 .footer-btn:hover,

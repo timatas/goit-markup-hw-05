@@ -374,7 +374,7 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  border-radius: 0 0 4px 4px;
+  border-radius: 50%;
 }
 .social-list-icon {
   fill: currentColor;
@@ -810,20 +810,13 @@ img {
 .modal-form-comment:focus {
   border-color: var(--iris);
 }
-/*.modal-form-input::placeholder {
-  opacity: 0;
-  color: var(--grey);
-  transition: opacity var(--animation);
-}
-.modal-form-input:focus::placeholder {
-  opacity: 1;
-}*/
+
 .modal-form-icon {
   position: absolute;
   top: 50%;
   left: 16px;
+  fill: var(--grey);
   transform: translateY(-50%);
-
   transition: fill var(--animation);
 }
 .modal-form-input:focus,
@@ -838,17 +831,27 @@ img {
 .modal-form-input:active + .modal-form-icon {
   fill: var(--iris);
 }
-
+.modal-form-input::placeholder {
+  opacity: 0;
+  color: var(--grey);
+  transition: opacity var(--animation);
+}
+.modal-form-input:focus::placeholder {
+  opacity: 1;
+}
 /* ======Agreement========== */
 .modal-form-agree {
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal-form-agreement {
-  display: block;
   font-size: 12px;
   letter-spacing: 0.04em;
   line-height: 1.17;
   color: var(--lightslate);
+  margin-left: 8px;
 }
 
 .agreement-checkbox {
@@ -856,6 +859,7 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+
   transition: background-color var(--animation), border var(--animation),
     fill var(--animation);
   display: inline-flex;
@@ -869,8 +873,9 @@ input[type='checkbox']:checked + .agreement-checkbox {
   fill: var(--cloud);
 }
 .agreement-checkbox-icon {
-  fill: currentColor;
+  fill: var(--cloud);
 }
+
 .modal-form-link {
   color: var(--iris);
 }

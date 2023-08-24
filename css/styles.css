@@ -867,7 +867,7 @@ img {
   justify-content: center;
   fill: transparent;
 }
-input[type='checkbox']:checked + .agreement-checkbox {
+input[type='checkbox']:checked + .modal-form-agreement + .agreement-checkbox {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);

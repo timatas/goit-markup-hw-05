@@ -739,7 +739,7 @@ img {
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-70%);
 }
 
 /* =====Modal form============== */
@@ -861,16 +861,22 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
 
-  transition: background-color var(--animation), border var(--animation),
+  transition: background-color var(--animation), border-color var(--animation),
     fill var(--animation);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
 }
+
+.agreement-checkbox:focus,
+.agreement-checkbox:hover {
+  border-color: var(--ocean);
+}
+
 input[type='checkbox']:checked + .modal-form-agreement > .agreement-checkbox {
   background-color: var(--ocean);
-  border: none;
+  border-color: var(--ocean);
   fill: var(--cloud);
 }
 .agreement-checkbox-icon {
@@ -879,4 +885,8 @@ input[type='checkbox']:checked + .modal-form-agreement > .agreement-checkbox {
 
 .modal-form-link {
   color: var(--iris);
+}
+
+.agree-btn {
+  margin-top: 24px;
 }

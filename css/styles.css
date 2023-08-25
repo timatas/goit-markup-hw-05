@@ -739,7 +739,7 @@ img {
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
-  transform: translateX(-50%) translateY(-70%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 /* =====Modal form============== */
